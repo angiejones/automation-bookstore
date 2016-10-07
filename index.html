@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html>
-	<head>
-       <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-        <title>Automation Demo Shop</title>
-       	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" href="css/themes/site.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/site.css" />
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/jquery.mobile-1.4.5.min.js"></script>
-		<script src="js/products.js"></script>
-	</head>
+<html class="ui-mobile"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- base href="http://demos.jquerymobile.com/1.4.5/listview-grid/listview-grid.html" -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Automation Bookstore Demo</title>
+	<link rel="stylesheet" href="css/jquery.css">
+	<link rel="stylesheet" href="css/listview-grid.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery_002.js"></script>
+	<script src="js/products.js"></script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-b">
+<div data-role="page" data-theme="b" id="demo-page" class="my-page ui-page ui-page-theme-b ui-page-active" data-url="demo-page" tabindex="0" style="min-height: 930px;">
 
-	<body>
-		
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+		<h1 class="ui-title" role="heading" aria-level="1">Automation Bookstore</h1>
+	</div><!-- /header -->
 
-		<div data-role="page" id="queue" data-theme="a" data-dom-cache="true">
-			<div data-role="header" data-position="fixed" align="center">
-			<h1>Automation Demo Shop</h1>
-			</div>
+	<div role="main" class="ui-content">
 
-			<ul id="productList" data-role="listview" data-split-theme="a" data-inset="true" data-filter="true" data-filter-placeholder="Search books...">
-					<script>listProducts();</script>
-			</ul>
-		</div>
-	</body>
-</html>	 	
+        <ul id="productList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search books...">
+			<script>
+				var products = getProducts();
+				$.each(products, function () {
+					$.each(this, function (index, product) {
+						var list = document.getElementById('productList');
+						var listItem = document.createElement('li');
+						listItem.setAttribute('id', "pid" + product.id);
+						listItem.innerHTML = "<a href='#'><img id='pid" + product.id + "_thumb' src='" + product.thumb + "' class='ui-li-thumb'><h2 id='pid" + product.id + "_title'>" + product.name + "</h2><p id='pid" + product.id + "_author'>" + product.author + "</p><p class='ui-li-aside' id='pid" + product.id + "_price'>$" + product.price +"</p></a>";
+						list.appendChild(listItem); 
+					 });
+				});
+			</script>
+		</ul>
+
+    </div><!-- /content -->
+
+</div><!-- /page -->
 
 
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div></body></html>
