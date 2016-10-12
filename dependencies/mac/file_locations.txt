@@ -3,3 +3,6 @@ http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-macosx-x64.dmg
 
 Eclipse: 
 http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/neon/R/eclipse-java-neon-R-macosx-cocoa-x86_64.tar.gz
+
+Chrome:
+https://www.google.com/chrome/
