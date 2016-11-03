@@ -16,7 +16,9 @@ Chrome Driver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 CONFIGURE
 ============
 Add selenium libraries to Eclipse workspace
+
 Ensure Eclipse is pointing to Java 1.8 in Build Path
+
 Create new Java project in Eclipse
 
 EXECUTE
