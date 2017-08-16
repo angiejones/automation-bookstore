@@ -8,7 +8,7 @@ Eclipse: http://www.eclipse.org/downloads/
 
 Chrome: https://www.google.com/chrome/
 
-Selenium 3.0.1 (Java Binding): http://www.seleniumhq.org/download/
+Selenium 3.5 (Java Binding): http://www.seleniumhq.org/download/
 
 Chrome Driver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
