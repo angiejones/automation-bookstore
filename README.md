@@ -1,4 +1,4 @@
-# Starting Out With Selenium
+# For Intro Automation Workshop
 
 DOWNLOAD AND INSTALL
 =====================
