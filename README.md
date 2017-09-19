@@ -23,18 +23,6 @@ In Eclipse, import downloaded project:
 - Click Open
 - Ensure pom.xml is checked 
 - Click Finish
-
-Add selenium libraries to Eclipse workspace:
-- On your file system, unzip selenium-java-3.5.3.zip
-- In Eclipse, within Package Explorer on the right, right click on the project
-- Select Properties
-- In the modal, choose Java Build Path from the right panel
-- Click Libraries tab
-- Click Add External Jars
-- Browse to the unzipped directory selenium-java-3.5.3/lib
-- Select ALL of the jar files
-- Click Open
-- Click Apply and Close
     
 Ensure Eclipse is pointing to Java 1.8 in Build Path:
 - Expand project in Package Explorer
