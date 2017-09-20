@@ -12,7 +12,7 @@ Selenium 3.5.3 (Selenium Client & WebDriver Language Bindings -> Java): http://w
 
 Chrome Driver: https://sites.google.com/a/chromium.org/chromedriver/downloads
 
-This project (unzip once downloaded)
+This project. Download it by clicking the green Clone or Download button above -> Choose Download. Unzip once downloaded.
 
 
 CONFIGURE
