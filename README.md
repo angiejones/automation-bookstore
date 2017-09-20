@@ -4,7 +4,7 @@ DOWNLOAD AND INSTALL
 =====================
 Java (JDK): http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-Eclipse: http://www.eclipse.org/downloads/
+Eclipse (during installation, choose the one for Java Developers): http://www.eclipse.org/downloads/
 
 Chrome: https://www.google.com/chrome/
 
