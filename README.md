@@ -2,31 +2,25 @@
 
 DOWNLOAD AND INSTALL
 =====================
-Java (JDK): http://www.oracle.com/technetwork/java/javase/downloads/index.html
+Java 8 (JDK): http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-Eclipse (during installation, choose the first option which is Eclipse IDE for Java Developers): http://www.eclipse.org/downloads/
+Chrome Browser: https://www.google.com/chrome/
 
-Chrome: https://www.google.com/chrome/
-
-Selenium 3.5.3 (Selenium Client & WebDriver Language Bindings -> Java): http://www.seleniumhq.org/download/
-
-Chrome Driver: https://sites.google.com/a/chromium.org/chromedriver/downloads
+IntelliJ (the Community version): https://www.jetbrains.com/idea/download
 
 This project. Download it by clicking the green Clone or Download button above -> Choose Download. Unzip once downloaded.
 
 
 CONFIGURE
 ============
-In Eclipse, import downloaded project:
-- File -> Import -> Maven -> Existing Maven Projects -> Next
-- Browse to downloaded project and select "project" folder
-- Click Open
-- Ensure pom.xml is checked 
-- Click Finish
-    
-Ensure Eclipse is pointing to Java 1.8 in Build Path:
-- Expand project in Package Explorer
-- JRE System Library should have [Java SE 8 [1.8.0....]]
-- If not, right click and select Properties
-- Choose Workspace Default JRE if it is pointed to 1.8. If not, choose Alternate JRE and browse to where you installed Java
-- Click Apply and Close
+In Intellij, import downloaded project:
+File -> New Project from Existing Sources
+Browse to downloaded project folder, automation-workshop -> project, and select the pom.xml under there and click Open
+Click Next on the Import Project from Maven prompt
+Ensure workshop:bookstore:0.0.1-SNAPSHOT is checked
+Click Next
+Ensure JDK 1.8 is selected
+Click Next
+Click Finish
+
+If you get stuck at any point, no worries! We'll make sure everyone is good to go during the workshop.
