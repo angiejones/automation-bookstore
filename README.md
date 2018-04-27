@@ -10,6 +10,12 @@ IntelliJ (the Community version): https://www.jetbrains.com/idea/download
 
 This project. Download it by clicking the green Clone or Download button above -> Choose Download. Unzip once downloaded.
 
+Download the version of chromedriver that corresponds to your Chrome web browser version and operating system:
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+Unzip chromedriver archive and move the executable file to your project directory under resources 
+(automation-workshop -> project -> resources)
+
 
 CONFIGURE
 ============
