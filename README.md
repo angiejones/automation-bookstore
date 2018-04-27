@@ -14,13 +14,13 @@ This project. Download it by clicking the green Clone or Download button above -
 CONFIGURE
 ============
 In Intellij, import downloaded project:<br>
-File -> New Project from Existing Sources 
-Browse to downloaded project folder, automation-workshop -> project, and select the pom.xml under there and click Open  
-Click Next on the Import Project from Maven prompt   
-Ensure workshop:bookstore:0.0.1-SNAPSHOT is checked   
-Click Next  
-Ensure JDK 1.8 is selected  
-Click Next  
-Click Finish  
+1. File -> New Project from Existing Sources 
+2. Browse to downloaded project folder, automation-workshop -> project, and select the pom.xml under there and click Open  
+3. Click Next on the Import Project from Maven prompt   
+4. Ensure workshop:bookstore:0.0.1-SNAPSHOT is checked   
+5. Click Next  
+6. Ensure JDK 1.8 is selected  
+7. Click Next  
+8. Click Finish  
 
 If you get stuck at any point, no worries! We'll make sure everyone is good to go during the workshop.
