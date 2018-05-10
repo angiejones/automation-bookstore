@@ -13,7 +13,9 @@ This project. Download it by clicking the green Clone or Download button above -
 Download the version of chromedriver that corresponds to your Chrome web browser version and operating system:
 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
-Unzip chromedriver archive and move the executable file to your project directory under resources  
+Create a 'resources' directory under automation-workshop -> project -> resources
+
+Unzip chromedriver archive and move the executable file to the 'resources' directory  
 (automation-workshop -> project -> resources)
 
 
