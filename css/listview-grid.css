@@ -16,7 +16,7 @@
 		width: 30.9333%; /* 33.3333% incl. 2 x 1.2% margin */
 		height: 14.5em; /* 232p */
 		margin: .5625em 1.2%;
-		transform:rotate(180deg);
+		/*transform:rotate(180deg);*/
 	}
 	.my-page .ui-listview li > .ui-btn {
 		-webkit-box-sizing: border-box; /* include padding and border in height so we can set it to 100% */
