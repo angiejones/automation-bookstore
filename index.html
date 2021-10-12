@@ -24,13 +24,35 @@
 			</form>
 			<ul id="productList" data-role="listview"  data-filter="true" data-input="#searchBar">
 				<script>
+					//AB Testing - Randomly include price
+					var includePrice;
+					const queryString = window.location.search;
+					const urlParams = new URLSearchParams(queryString);
+					if(urlParams.get('abtest') == 1){
+
+						if(Math.floor(Math.random() * 2) == 1){
+							includePrice = true;
+						}
+						else includePrice = false;
+					}
+					else includePrice = true;
+					
+
 					var products = getProducts();
 					$.each(products, function () {
 						$.each(this, function (index, product) {
 							var list = document.getElementById('productList');
 							var listItem = document.createElement('li');
 							listItem.setAttribute('id', "pid" + product.id);
-							listItem.innerHTML = "<a href='#'><img id='pid" + product.id + "_thumb' src='" + product.thumb + "' class='ui-li-thumb'><h2 id='pid" + product.id + "_title'>" + product.name + "</h2><p id='pid" + product.id + "_author'>" + product.author + "</p><p class='ui-li-aside' id='pid" + product.id + "_price'>$" + product.price +"</p></a>";
+							var bookInfo = `<a href='#'><img id='pid${product.id}_thumb' src='${product.thumb}' class='ui-li-thumb'><h2 id='pid${product.id}_title'>${product.name}</h2><p id='pid${product.id}_author'>${product.author}</p>`;
+
+							
+							const priceInfo = `<p class='ui-li-aside' id='pid${product.id}_price'>$${product.price}</p>`;
+							if(includePrice) bookInfo += priceInfo;
+
+							bookInfo += "</a>"
+
+							listItem.innerHTML = bookInfo;
 							list.appendChild(listItem); 
 						 });
 					});
